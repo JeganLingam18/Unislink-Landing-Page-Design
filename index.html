@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin-inline: auto;
+    }
+    .head {
+      display: flex;
+      background-color: red;
+      justify-content: end;
+      p {
+        padding-inline: 15px;
+        color: white;
+      }
+      :nth-of-type(5) {
+        padding-right: 100px;
+      }
+    }
+    .heading {
+      display: flex;
+      background-color: white;
+      padding: 10px;
+      img {
+        padding-left: 100px;
+      }
+      .content {
+        display: flex;
+        margin-left: 350px;
+      }
+      p {
+        padding-inline: 30px;
+      }
+    }
+    .section-1 {
+      position: absolute;
+      width: 100%;
+      background-image: url(hero-bg.png);
+      color: white;
+      height: 880px;
+      p {
+        margin-top: 0;
+        padding-left: 110px;
+        width: 550px;
+      }
+      .sec-1para {
+        word-spacing: 2px;
+        padding-top: 110px;
+        font-weight: 500;
+        font-size: xx-large;
+      }
+      .butt {
+        text-decoration: none;
+        margin-top: 20px;
+        margin-left: 110px;
+        background-color: red;
+        color: white;
+        padding: 10px;
+        display: inline-block;
+      }
+    }
+    .section-2 {
+      position: absolute;
+      margin-top: 835px;
+      width: 650px;
+      font-size: larger;
+      word-spacing: 2px;
+      padding-left: 100px;
+      line-height: 30px;
+    }
+    .section-3 {
+      margin-top: 1100px;
+      display: flex;
+      /* width: 100px; */
+      img {
+        margin-left: 170px;
+        width: 100px;
+      }
+    }
+    .img {
+      width: 450px;
+      margin-left: 150px;
+      p {
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+    }
+    .section-4 {
+      display: flex;
+      margin-top: 100px;
+      .wee {
+        width: 500px;
+        text-align: justify;
+        padding-left: 100px;
+        line-height: 25px;
+      }
+      img {
+        margin-left: 150px;
+      }
+      .ins-1 {
+        margin-left: 100px;
+        color: red;
+      }
+    }
+    .section-5 {
+      margin-top: 100px;
+      text-align: center;
+      p {
+        padding-inline: 300px;
+        /* text-align: justify; */
+        font-size: larger;
+        word-spacing: 2px;
+      }
+    }
+    .contn-img {
+      display: flex;
+      margin-left: 90px;
+      padding: 50px;
+      margin-bottom: 150px;
+      p {
+        padding-inline: 0px;
+        text-align: justify;
+      }
+      h4 {
+        padding-inline: 0px;
+        text-align: left;
+      }
+
+      .img1 {
+        height: 50px;
+        width: 320px;
+        padding: 20px;
+      }
+      img {
+        margin-left: -300px;
+        height: 50px;
+      }
+      .ins-1 {
+        color: red;
+      }
+    }
+    .section-6 {
+      margin-top: 300px;
+      margin-left: 100px;
+      margin-bottom: 100px;
+      .improve {
+        display: flex;
+        img {
+          margin-left: 30px;
+          margin-top: 50px;
+        }
+        .con {
+          margin-top: 50px;
+          margin-left: 100px;
+          width: 580px;
+          text-align: justify;
+        }
+        .tp {
+          margin-top: 30px;
+        }
+        .butt {
+          text-decoration: none;
+          margin-top: 20px;
+          background-color: red;
+          color: white;
+          padding: 10px;
+          padding-inline: 20px;
+          display: inline-block;
+        }
+      }
+    }
+    .section-7 {
+      display: flex;
+      margin-left: 100px;
+      margin-top: 50px;
+      margin-bottom: 150px;
+      .con-1 {
+        width: 650px;
+        margin-right: 100px;
+        text-align: left;
+        line-height: 25px;
+      }
+      .con-2 {
+        margin-left: -30px;
+      }
+      .butt {
+        text-decoration: none;
+        margin-top: 20px;
+        background-color: red;
+        color: white;
+        padding: 10px;
+        display: inline-block;
+      }
+    }
+    .section-8 {
+      margin-top: 200px;
+      margin-left: 100px;
+      width: 700px;
+      p {
+        line-height: 35px;
+        word-spacing: 5px;
+        font-size: larger;
+      }
+    }
+    .box {
+      display: flex;
+      .box1,
+      .box2 {
+        width: 480px;
+        margin-left: 200px;
+        .see {
+          margin-left: 50px;
+          font-weight: 800;
+          font-size: larger;
+          margin-bottom: 5px;
+        }
+        .se {
+          text-align: center;
+        }
+        img {
+          width: 30px;
+        }
+      }
+      .box2 {
+        margin-left: 100px;
+      }
+    }
+    .section-10 {
+      margin-top: 200px;
+      text-align: center;
+      margin-bottom: 100px;
+      margin-left: 100px;
+      h1 {
+        margin-bottom: 50px;
+      }
+      .one-box,
+      .two-box {
+        display: flex;
+        justify-content: space-evenly;
+        .on {
+          width: 320px;
+          text-align: center;
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+    .section-11 {
+      margin-top: 200px;
+      margin-left: 100px;
+      .make {
+        margin-top: 50px;
+        width: 700px;
+        line-height: 30px;
+        font-size: large;
+      }
+      .box-4 {
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        img {
+          float: left;
+          width: 50px;
+          margin: 30px;
+        }
+        p {
+          width: 500px;
+          text-align: left;
+        }
+      }
+    }
+    .section-12 {
+      margin-top: 150px;
+      margin-left: 100px;
+      margin-bottom: 100px;
+      h1 {
+        margin-left: 450px;
+      }
+      .images-sec {
+        display: flex;
+        gap: 20px;
+        margin-top: 50px;
+        img {
+          width: 350px;
+        }
+        /* img:hover {
+          background-color: yellow;
+          position: absolute;
+        } */
+        .ins {
+          text-align: left;
+          padding: 20px;
+          width: 230px;
+          .ins-1 {
+            color: red;
+          }
+        }
+      }
+      .ins:nth-of-type() {
+        color: yellow;
+      }
+      .learn {
+        text-decoration: none;
+        margin-left: 450px;
+        background-color: red;
+        color: white;
+        padding: 10px;
+        padding-inline: 20px;
+      }
+    }
+    .section-13 {
+      margin-bottom: 100px;
+      margin-top: 50px;
+      /* margin-left: 100px; */
+      text-align: center;
+      .big-box {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        .big-box1,
+        .big-box2 {
+          background-color: whitesmoke;
+          padding: 50px;
+          p {
+            margin-bottom: 40px;
+          }
+          a {
+            padding: 10px;
+            padding-inline: 20px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+          }
+        }
+        .big-box2 {
+          padding-inline: 80px;
+          a {
+            background-color: skyblue;
+          }
+        }
+      }
+    }
+    .section-14 {
+      margin-top: 50px;
+      margin-left: 100px;
+      width: 1200px;
+      .footer {
+        display: flex;
+        justify-content: space-around;
+        .c2 p:first-of-type {
+          color: blue;
+        }
+        .c3 p:first-of-type {
+          color: blue;
+        }
+        .c4 p:first-of-type {
+          color: blue;
+        }
+        input {
+          padding: 10px;
+          border-color: lightsteelblue;
+        }
+        button {
+          background-color: red;
+          color: white;
+          padding: 10px;
+          padding-inline: 20px;
+          border: none;
+        }
+      }
+    }
+    .section-15 {
+      margin-top: 150px;
+      text-align: center;
+      .opa {
+        opacity: 0.7;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="head">
+        <p>Request a Demo</p>
+        <p>Request a consult</p>
+        <p>Secure Client Login</p>
+        <p>|</p>
+        <p>(602) 374-3101</p>
+      </div>
+      <div class="heading">
+        <img
+          src="/CSS-Project-2/Unislink Landing Page Design/logo.png"
+          alt=""
+        />
+        <div class="content">
+          <p>About Us</p>
+          <p>Programs & Solutions</p>
+          <p>Knowledge Center</p>
+          <p>Contact Us</p>
+        </div>
+      </div>
+      <div class="section-1">
+        <p class="sec-1para">
+          Your Mission Is to Care for Patients. Ours Is to Help You Get Paid.
+        </p>
+        <p>Everything you need for success under value based care</p>
+        <div href="" class="butt">Learn How</div>
+      </div>
+      <div class="section-2">
+        <h1>Who We Are</h1>
+        <p>
+          <strong> UnisLink </strong>is the only company that combines premium
+          data analytics capabilities, state-of-the-art technology and
+          processes, and high-touch, responsive client services into a single
+          platform to help healthcare organizations and providers get paid for
+          their hard work under every aspect of a value based care system.
+        </p>
+      </div>
+      <div class="section-3">
+        <div class="img">
+          <img src="fee-service.png" alt="" />
+          <h1>Fee for Service</h1>
+          <p>
+            Integrated tools and automation options streamline and simplify
+            patient engagement, encounter data capture and billing.
+          </p>
+          <img src="quality-incentives.png" alt="" />
+          <h1>Quality Incentives</h1>
+          <p>
+            Reporting and analytics insights help make it easy to meet quality
+            measures and maximize returns
+          </p>
+        </div>
+        <div class="img">
+          <img src="pay-performance.png" alt="" />
+          <h1>Pay for Performance</h1>
+          <p>
+            Analytics and EMR integration helps you focus care on patients who
+            need it most, optimizing incentive returns and health comes.
+          </p>
+          <img src="value.png" alt="" />
+          <h1>Value/Risk-Based Payments</h1>
+          <p>
+            Scalable population health tools help you efficiently guide
+            impactful, quality care to exceed benchmarks and avoid downside
+            risk.
+          </p>
+        </div>
+      </div>
+      <div class="section-4">
+        <div class="line">
+          <p class="wee">
+            Our proprietary, comprehensive suite of offerings coupled with a
+            deep understanding of the healthcare landscape means we’re able to
+            offer improvements to point-of-service and back-end systems,
+            technology, and processes that are proven to have a direct and
+            positive impact on the bottom line.
+          </p>
+          <p class="ins-1">Read More --></p>
+        </div>
+        <img src="home-who-we-are.jpg" alt="" />
+      </div>
+      <div class="section-5">
+        <div class="contn">
+          <h1>Who We Serve</h1>
+          <p>
+            Our modular program and service offerings can be customized to
+            perfectly fit your needs whether you are a solo provider, or a large
+            multi-division, multi-location group practice.
+          </p>
+          <p>Select your path below for more information</p>
+        </div>
+        <div class="contn-img">
+          <div class="img1">
+            <img src="wws-healthcare-providers.png" alt="" />
+            <h4>Healthcare Providers</h4>
+            <p>
+              Our platform is the one-source solution for all of your business
+              and revenue management needs, helping to keep your practice
+              profitable, compliant, and cruising.
+            </p>
+            <p class="ins-1">Read More --></p>
+          </div>
+          <div class="img1">
+            <img src="wws-healthcare-systems.png" alt="" />
+            <h4>Health Systems & ACOs</h4>
+            <p>
+              Breeze past billing roadblocks with a supercharged workflow
+              designed to handle enterprise-level challenges.
+            </p>
+            <p class="ins-1">Read More --></p>
+          </div>
+          <div class="img1">
+            <img src="wws-channel.png" alt="" />
+            <h4>Channel and Referral Partners</h4>
+            <p>
+              We're always on the lookout for top-of-the-line collaborators to
+              improve our service offerings and get them before a wider
+              audience.
+            </p>
+            <p class="ins-1">Read More --></p>
+          </div>
+        </div>
+      </div>
+      <div class="section-6">
+        <h1>Our Programs</h1>
+        <div class="improve">
+          <img src="programs-improvement.jpg" alt="" />
+          <div class="con">
+            <p>Business & Revenue Improvement</p>
+            <p>
+              Success in today's value-based health economy begins and ends with
+              care delivery. But in between — that's where we come in. Think of
+              us as your pit crew, providing an entire suite of on-site tools,
+              programs, applications, and services to keep your business on
+              track and running smoothly.
+            </p>
+            <p class="tp">
+              Advanced Analytics | Billing/RCM | Value-Added Reporting | Process
+              Outsourcing Value-Based Payment Programs | Process Optimization
+            </p>
+            <div href="" class="butt">Learn More</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-7">
+        <div class="con-1">
+          <h1>Population Overhealth</h1>
+          <p>
+            Managing patient populations in the short, medium, and long term is
+            essential to providing excellent care. But the road to meeting
+            value-based quality metrics isn't always a straight or short one.
+            Our proprietary iCMS application empowers you to do more with your
+            EMR, eliminating guesswork and confusion, while improving patient
+            health and connectivity.
+          </p>
+          <p>
+            Care Gap Analytics | Patient Engagement | Clinical Quality Measures
+            | Chronic Care Management | Proactive Patient Alerts | Risk
+            Mitigation
+          </p>
+          <div href="" class="butt">Learn More</div>
+        </div>
+        <div class="con-2">
+          <img src="programs-health.jpg" alt="" />
+        </div>
+      </div>
+      <div class="section-8">
+        <h1>The Edge You Need</h1>
+        <p>
+          Managing your business while managing care can be an uphill drive. We
+          work with you to make day-to-day operations and navigating population
+          health challenges a breeze. You can focus on performance and getting
+          paid, while we handle the rest.
+        </p>
+      </div>
+      <div class="box">
+        <div class="box1">
+          <p class="see">Promote Better Patient Outcomes</p>
+          <p class="se">
+            <img src="check.png" alt="" />
+            Patient engagement tools and proactive alerts keep patients updated
+            and on the healthy track.
+          </p>
+        </div>
+        <div class="box2">
+          <p class="see">Navigate Value-Based Care Cost-Effectively</p>
+          <p class="se">
+            <img src="check.png" alt="" />
+            We help you stay on top of your patient population to maximize
+            benefits and identify gaps in care early on.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box1">
+          <p class="see">Improve Financial Performance</p>
+          <p class="se">
+            <img src="check.png" alt="" />
+            Process optimization and revenue systems implementation can lower
+            your costs, and help you grow your business.
+          </p>
+        </div>
+        <div class="box2">
+          <p class="see">Manage Core Functionality and Growth</p>
+          <p class="se">
+            <img src="check.png" alt="" />
+            Automated workflows eliminate errors, while deep-dive analytics help
+            you expand operations.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box1">
+          <p class="see">Enable/Meet Quality & Compliance (MIPS/MACRA) Goals</p>
+          <p class="se">
+            <img src="check.png" alt="" />
+            Our modules make targeting, collecting, and reporting on clinical
+            quality measures painless and profitable.
+          </p>
+        </div>
+        <div class="box2">
+          <p class="see">Manage Contracts more Profitably</p>
+          <p class="se">
+            <img src="check.png" alt="" />
+            From charge capture to payment portals, we've optimized the entire
+            billing process to get you more mileage out of every contract.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box1">
+          <p class="see">Promote Patient Retention</p>
+          <p class="se">
+            <img src="check.png" alt="" />
+            Our intake, billing, and communication models encourage patient
+            loyalty and low turnover.
+          </p>
+        </div>
+        <div class="box2">
+          <p class="see">Effectively Manage Risk</p>
+          <p class="se">
+            <img src="check.png" alt="" />
+            Unparalleled data analytics and integrated population management
+            tools help you improve patient benchmarks and avoid penalties.
+          </p>
+        </div>
+      </div>
+      <div class="section-10">
+        <h1>Like Nothing Else Out There</h1>
+        <div class="one-box">
+          <div class="on">
+            <img src="analytics.png" alt="" />
+            <p>Analytics</p>
+            <p>
+              Deeper insight into patient population, profiles, and risk factors
+              provides you the road map to success.
+            </p>
+          </div>
+          <div class="on">
+            <img src="workflow-integration.png" alt="" />
+            <p>Workflow-Integration</p>
+            <p>
+              Unlike other platforms, the UnisLink RCM Plus++ adapts
+              effortlessly to workflows and programs you already have in place.
+            </p>
+          </div>
+          <div class="on">
+            <img src="modular-build.png" alt="" />
+            <p>Modular Build</p>
+            <p>
+              We customize our services and programs to fit your scale, needs,
+              and objectives.
+            </p>
+          </div>
+        </div>
+        <div class="two-box">
+          <div class="on">
+            <img src="improving-revenue.png" alt="" />
+            <p>Improving Revenue Cycle through Population Health</p>
+            <p>
+              A streamlined, error-free billing system keeps patients and
+              accounts receivable happy and healthy.
+            </p>
+          </div>
+          <div class="on">
+            <img src="high-touch.png" alt="" />
+            <p>High-Touch and Low-Cost</p>
+            <p>
+              Our dynamic pricing structure and tailored offerings work within
+              your budget, not against it.
+            </p>
+          </div>
+          <div class="on">
+            <img src="value-overlay-functionality.png" alt="" />
+            <p>Overlay Functionality</p>
+            <p>
+              Once installed, our software overlays onto your existing EMR
+              application, to kickstart productivity.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section-11">
+        <h1>Make,Model and Modules</h1>
+        <p class="make">
+          Our propprietary <strong>UnisLink iCMS™</strong> Supercharges Your EMR
+          Our proprietary UnisLink iCMS™ technology unlocks the power of your
+          existing EMR to deliver advanced engagement capabilities, risk
+          prediction and mitigation, care gap identification, and more. Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Illo accusamus
+          eius reprehenderit ullam, soluta ducimus sequi voluptatem sint hic
+          laudantium!
+        </p>
+        <h1>UnisLink iCMS™ Modules</h1>
+        <div class="box-4">
+          <div class="box-21">
+            <img src="population-health.png" alt="" />
+            <h3>Population Health</h3>
+            <p>
+              Aggregate, categorize, analyze, and mobilize your population data
+              with cutting-edge accuracy and efficiency.
+            </p>
+          </div>
+          <div class="box-22">
+            <img src="chronic-care-management.png" alt="" />
+            <h3>Chronic Care Management</h3>
+            <p>
+              Whether in-office or in-between visits, we make following the
+              progress of your most vulnerable patients more manageable and
+              effective.
+            </p>
+          </div>
+        </div>
+        <div class="box-4 1">
+          <div class="box-23">
+            <img src="clinical-quality-measures.png" alt="" />
+            <h3>Clinical Quality Measures</h3>
+            <p>
+              Reporting on and meeting outcomes, resources, and care
+              coordination benchmarks isn't always easy. Let's change that.
+            </p>
+          </div>
+          <div class="box-24">
+            <img src="financial-analytics.png" alt="" />
+            <h3>Financial Analytics and Reporting Module</h3>
+            <p>
+              Intuitive, graphical, and detailed reports provide invaluable,
+              actionable insignt for running efficiently and capitalize on
+              value-based reimbursements.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section-12">
+        <h1>Thought Center</h1>
+        <div class="images-sec">
+          <div class="1stimg">
+            <img src="thought-center-one.jpg" alt="" />
+            <div class="ins">
+              <p>Track and Report MIPS Measures</p>
+              <p>Sit back,Relax,Collect and Submit.</p>
+              <p class="ins-1">Read More --></p>
+            </div>
+          </div>
+          <div class="2ndimg">
+            <img src="thought-center-two.jpg" alt="" />
+            <div class="ins">
+              <p>Addressing Gaps in Care</p>
+              <p>Don't just the mind gap and plug it.</p>
+              <p class="ins-1">Read More --></p>
+            </div>
+          </div>
+          <div class="3rdimg">
+            <img src="thought-center-three.jpg" alt="" />
+            <div class="ins">
+              <p>Analyzing the Analytics</p>
+              <p>Does your inside look need to be more insightful?</p>
+              <p class="ins-1">Read More --></p>
+            </div>
+          </div>
+        </div>
+        <a class="learn">View more Thought Content</a>
+      </div>
+      <div class="section-13">
+        <h1>How Can We Help?</h1>
+        <div class="big-box">
+          <div class="big-box1">
+            <img src="vector-help.png" height="50px" width="50px" />
+            <h3>I'd Like a Demo or Consult</h3>
+            <p>We can show your around the turns.</p>
+            <a href="">Learn More</a>
+          </div>
+          <div class="big-box2">
+            <img src="value.png" height="50px" width="50px" />
+            <h3>Partnership Inquiry</h3>
+            <p>Looking for a Co-pilot?</p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="section-14">
+        <div class="footer">
+          <div class="c1">
+            <img src="logo.png" alt="" />
+          </div>
+          <div class="c2">
+            <p>QUICK LINKS</p>
+            <p>About Us</p>
+            <p>Programs & Solutions</p>
+            <p>Knowlede Center</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="c3">
+            <p>GET IN TOUCH</p>
+            <p>Email:jeganlingam4@gmail.com</p>
+            <p>Main:(602) 374-3101</p>
+            <p>Fax:(602) 297-6754</p>
+            <hr />
+            <pre>
+21410N 19st Avenue, Ste. #151
+Phoneix, AZ 85027</pre
+            >
+          </div>
+          <div class="c4">
+            <p>CONNECT WITH US</p>
+            <p>Sign up for email updates</p>
+            <input type="email" placeholder="Your Email" /><button>
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="section-15">
+        <p>Legal Disclaimer | Disclosures</p>
+        <p class="opa">&#169; 2019 UnisLink All Rights Reserved</p>
+      </div>
+    </div>
+  </body>
+</html>
